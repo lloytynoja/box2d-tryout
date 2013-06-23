@@ -1,4 +1,7 @@
-/* scripts */
+/* 
+ * Based on the example provided with box2dweb release.
+ */
+
 function init() {
 	var world;
 	var scale;
@@ -181,12 +184,12 @@ function init() {
 		}
 		/* rotation (not available with fixed */
 		else if (e.keyCode == '65') {
-			console.log("vasen");
+			console.log("left");
 			//bodies[bodies.length-1].ApplyImpulse(new b2Vec2(0,1000), bodies[bodies.length-1].GetWorldCenter() - 1);
 			bodies[bodies.length-1].ApplyTorque(-100000);
 		}
 		else if (e.keyCode == '68') {
-			console.log("oikea");
+			console.log("right");
 			bodies[bodies.length-1].ApplyTorque(100000);
 			}		
 	}
